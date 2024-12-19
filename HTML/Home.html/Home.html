@@ -44,16 +44,27 @@
             max-width: 1200px;
             margin: auto;
         }
+        .recipe-card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
         .recipe-card {
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            width: 100%;
         }
         .recipe-card img {
             width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
         }
         .recipe-card-content {
             padding: 15px;
@@ -65,6 +76,16 @@
         .recipe-card p {
             color: #666;
             margin: 0;
+        }
+        @media (max-width: 768px) {
+            .recipe-card {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            .recipe-card img {
+                height: 150px;
+            }
         }
         footer {
             background-color: #ff5722;
@@ -87,33 +108,60 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Recipes</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <div class="recipe-card">
-            <img src="https://via.placeholder.com/800x400" alt="Recipe Image">
-            <div class="recipe-card-content">
-                <h3>Classic Spaghetti Carbonara</h3>
-                <p>A creamy, rich, and comforting pasta dish for any occasion.</p>
+        <div class="recipe-card-grid">
+            <div class="recipe-card">
+                <a href="pavbhaji.html">
+                    <img src="pavbhaji.jpg" alt="Pav Bhaji">
+                </a>
+                <div class="recipe-card-content">
+                    <h3><a href="pavbhaji.html">Pav Bhaji</a></h3>
+                    <p>A creamy, rich, and comforting Indian dish for any occasion.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="recipe-card">
-            <img src="https://via.placeholder.com/800x400" alt="Recipe Image">
-            <div class="recipe-card-content">
-                <h3>Homemade Margherita Pizza</h3>
-                <p>Simple ingredients, incredible flavors, and a crispy crust.</p>
+            <div class="recipe-card">
+                <a href="misal.html">
+                    <img src="Misal-pav.jpg" alt="Misal Pav">
+                </a>
+                <div class="recipe-card-content">
+                    <h3><a href="misal.html">Misal Pav</a></h3>
+                    <p>Spicy and flavorful curry served with soft bread.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="recipe-card">
-            <img src="https://via.placeholder.com/800x400" alt="Recipe Image">
-            <div class="recipe-card-content">
-                <h3>Decadent Chocolate Cake</h3>
-                <p>A dessert that satisfies your sweet tooth like no other.</p>
+            <div class="recipe-card">
+                <a href="dosa.html">
+                    <img src="th.jpg" alt="Dosa">
+                </a>
+                <div class="recipe-card-content">
+                    <h3><a href="dosa.html">Dosa</a></h3>
+                    <p>A crispy and savory South Indian delight.</p>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <a href="maggie.html">
+                    <img src="OIP.jpg" alt="Maggie">
+                </a>
+                <div class="recipe-card-content">
+                    <h3><a href="maggie.html">Maggie</a></h3>
+                    <p>A quick and easy comfort food loved by all.</p>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <a href="panner.html">
+                    <img src="panner.jpg" alt="Maggie">
+                </a>
+                <div class="recipe-card-content">
+                    <h3><a href="maggie.html">Maggie</a></h3>
+                    <p>A quick and easy comfort food loved by all.</p>
+                </div>
+            </div>
             </div>
         </div>
     </div>
