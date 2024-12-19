@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Website</title>
+    <title>Paneer Tikka Masala Recipe</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f8f8f8;
         }
+
         header {
             background-color: #ff5722;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         nav {
             background-color: #ff7043;
             padding: 10px 0;
         }
+
         nav ul {
             list-style: none;
             margin: 0;
@@ -28,56 +33,113 @@
             display: flex;
             justify-content: center;
         }
+
         nav ul li {
             margin: 0 15px;
         }
+
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
         }
+
         nav ul li a:hover {
             text-decoration: underline;
         }
+
         .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .recipe-card {
+            max-width: 800px;
+            margin: 20px auto;
             background: white;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
         }
-        .recipe-card img {
-            width: 100%;
-            height: auto;
-        }
-        .recipe-card-content {
-            padding: 15px;
-        }
-        .recipe-card h3 {
-            margin-top: 0;
+
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 2.5em;
             margin-bottom: 10px;
         }
-        .recipe-card p {
-            color: #666;
-            margin: 0;
+
+        h2 {
+            color: #ff7043;
+            font-size: 1.8em;
+            margin-top: 20px;
+            border-bottom: 2px solid #ff7043;
+            display: inline-block;
+            padding-bottom: 5px;
         }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
         footer {
             background-color: #ff5722;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
             bottom: 0;
             width: 100%;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .highlight {
+            background-color: #fff3e0;
+            border-left: 5px solid #ff7043;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff7043;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff5722;
+        }
     </style>
 </head>
+
 <body>
+
     <header>
         <h1>Welcome to Tasty Recipes</h1>
         <p>Your go-to site for delicious recipes</p>
@@ -93,33 +155,50 @@
     </nav>
 
     <div class="container">
-        <div class="recipe-card">
-            <img src="https://via.placeholder.com/800x400" alt="Recipe Image">
-            <div class="recipe-card-content">
-                <h3>Classic Spaghetti Carbonara</h3>
-                <p>A creamy, rich, and comforting pasta dish for any occasion.</p>
-            </div>
+        <h1>Paneer Tikka Masala</h1>
+
+        <div class="highlight">
+            <p>Paneer Tikka Masala is a popular Indian dish made with marinated paneer cubes cooked in a rich and creamy tomato-based gravy. Perfect with naan or rice!</p>
         </div>
 
-        <div class="recipe-card">
-            <img src="https://via.placeholder.com/800x400" alt="Recipe Image">
-            <div class="recipe-card-content">
-                <h3>Homemade Margherita Pizza</h3>
-                <p>Simple ingredients, incredible flavors, and a crispy crust.</p>
-            </div>
-        </div>
+        <h2>Ingredients</h2>
+        <ul>
+            <li>200g paneer (cubed)</li>
+            <li>1 cup plain yogurt</li>
+            <li>2 tbsp gram flour (besan)</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp turmeric powder</li>
+            <li>1 tsp garam masala</li>
+            <li>1 tsp coriander powder</li>
+            <li>1 tsp cumin powder</li>
+            <li>1 large onion (chopped)</li>
+            <li>2 large tomatoes (pureed)</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>1/2 cup heavy cream</li>
+            <li>2 tbsp oil</li>
+            <li>Salt to taste</li>
+            <li>Fresh coriander leaves for garnish</li>
+        </ul>
 
-        <div class="recipe-card">
-            <img src="https://via.placeholder.com/800x400" alt="Recipe Image">
-            <div class="recipe-card-content">
-                <h3>Decadent Chocolate Cake</h3>
-                <p>A dessert that satisfies your sweet tooth like no other.</p>
-            </div>
-        </div>
+        <h2>Instructions</h2>
+        <ol>
+            <li>In a bowl, mix yogurt, gram flour, red chili powder, turmeric, garam masala, coriander powder, and cumin powder. Add paneer cubes and marinate for 30 minutes.</li>
+            <li>Heat 1 tbsp oil in a pan and cook the marinated paneer cubes until golden brown. Set aside.</li>
+            <li>In the same pan, heat another 1 tbsp oil and sauté chopped onions until translucent.</li>
+            <li>Add ginger-garlic paste and cook until fragrant.</li>
+            <li>Add tomato puree, salt, and remaining spices. Cook for 5-7 minutes until the oil separates.</li>
+            <li>Add the cooked paneer cubes and mix well.</li>
+            <li>Pour in the heavy cream and simmer for 5 minutes.</li>
+            <li>Garnish with fresh coriander leaves and serve hot with naan or rice.</li>
+        </ol>
+
+        <a href="#" class="btn">Explore More Recipes</a>
     </div>
 
     <footer>
         <p>&copy; 2024 Tasty Recipes. All rights reserved.</p>
     </footer>
+
 </body>
+
 </html>
