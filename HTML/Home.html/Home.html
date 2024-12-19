@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ff7043;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .recipe-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .recipe-card img {
+            width: 100%;
+            height: auto;
+        }
+        .recipe-card-content {
+            padding: 15px;
+        }
+        .recipe-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .recipe-card p {
+            color: #666;
+            margin: 0;
+        }
+        footer {
+            background-color: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tasty Recipes</h1>
+        <p>Your go-to site for delicious recipes</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/800x400" alt="Recipe Image">
+            <div class="recipe-card-content">
+                <h3>Classic Spaghetti Carbonara</h3>
+                <p>A creamy, rich, and comforting pasta dish for any occasion.</p>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/800x400" alt="Recipe Image">
+            <div class="recipe-card-content">
+                <h3>Homemade Margherita Pizza</h3>
+                <p>Simple ingredients, incredible flavors, and a crispy crust.</p>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/800x400" alt="Recipe Image">
+            <div class="recipe-card-content">
+                <h3>Decadent Chocolate Cake</h3>
+                <p>A dessert that satisfies your sweet tooth like no other.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tasty Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
